@@ -1,0 +1,41 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    padding: 0;
+}
+header{
+    background-color: #897aec;
+    height: 10vh;
+    width: 100%;
+}
+aside nav{
+    display: flex;
+    flex-direction: column;
+}
+aside nav a{
+    text-align: center;
+}
+main{
+    background-color: rgb(242, 230, 247);
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 100%;
+}
+section{
+    height: 80vh;
+    width: 85%;
+}
+footer{
+    background-color: hsl(286, 49%, 78%);
+    height: 10vh;
+    width: 100%;
+}
+hi{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.logo{
+    height: 100%;
+}
