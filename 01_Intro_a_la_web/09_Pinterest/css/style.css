@@ -1,4 +1,4 @@
-/body{
+body{
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     margin: 0;
@@ -7,10 +7,11 @@
 header{
     display: flex;
     flex-direction: row;
-    background-color: #897aec;
+    background-color: #ccb487;
     height: 10vh;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+    margin-bottom: .5em;
 }
 header div{
     display: flex;
@@ -24,36 +25,64 @@ h1{
     display: flex;
     image-orientation: from-image;
 }
-.listanav1{
+.listanav1, .listanav2{
     align-items: center;
     color: white;
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 40px;
-}
-.listanav2{
-    align-items: center;
-    color: white;
-    display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     list-style: none;
     margin: 40px;
     padding: 5px;
 }
-footer{
-    align-items: center;
+body{
+    background-color: #333;
+    margin: 1cm;
+}
+
+img{
+    max-width: 100%;
+    margin-bottom: .5em;
+    outline: 2px;
+    outline-offset: -10px;
+    /* object-fit: cover; */
+}
+
+.galeria{
+    columns: 6 320px;
+    column-gap: .5em;
+}
+
+.img2{
     display: flex;
-    background-color: hsl(286, 49%, 78%);
-    flex-direction: row;
-    height: 10vh;
     justify-content: center;
-    width: 100%;
+    flex-direction: column;
 }
+
+/* footer */
+footer{
+    background: #2f2f2f;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 footer p{
-    margin: 0;
+    color: white;
+    margin-top: 40px;
 }
-footer a{
-    color: #000000;
-    margin: 5px;
+
+html{
+    scroll-behavior: smooth;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
