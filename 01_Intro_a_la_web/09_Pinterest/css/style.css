@@ -32,7 +32,7 @@ a {
     display: block;
     line-height: 70px;
     margin-left: 70px;
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 0 10px;
     width: 70%;
 }
@@ -80,6 +80,8 @@ a {
     font-size: 30px;
     padding: 0 20px;
     line-height: 60px;
+    display: flex;
+    flex-direction: row;
 }
 
 @media (max-width: 768px) {
@@ -116,9 +118,6 @@ a {
     .nav-menu-link_active { 
         background-color: none;
         color: #83c5f7;
-    }
-    .nav-toggle{
-        display: block;
     }
 }
 /* Inicia img */
