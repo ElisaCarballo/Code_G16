@@ -1,43 +1,127 @@
-body{
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
+* {
     margin: 0;
+}
+body {
+    background-color: #333;
+    font-family: sans-serif;
+    margin: 2.5cm;
     padding: 0;
 }
-header{
-    display: flex;
-    flex-direction: row;
-    background-color: #ccb487;
-    height: 10vh;
-    justify-content: space-around;
+.header, .titulo {
+    background-color: #aaa5a5;
+    height: 90px;
+    position: fixed;
     width: 100%;
-    margin-bottom: .5em;
+    top: 0;
+    left: 0;
 }
-header div{
+.nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
-h1{
-    align-items: center;
-    color: black;
-    font-size: 18px;
-    font-family: cursive;
-    display: flex;
-    image-orientation: from-image;
-}
-.listanav1, .listanav2{
-    align-items: center;
+
+.nav-link {
     color: white;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+.logo {
     display: flex;
-    flex-direction: row-reverse;
+    display: block;
+    line-height: 70px;
+    margin-left: 70px;
+    margin-top: 15px;
+    padding: 0 10px;
+    width: 70%;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    margin-top: 15px;
+    line-height: 80px;
     list-style: none;
-    margin: 40px;
-    padding: 5px;
 }
-body{
-    background-color: #333;
-    margin: 1cm;
+
+.nav-menu-item {
+    margin: 0 3px;
+    margin-top: 5px;
+    padding: 0 5px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+
 }
+
+.nav-menu-link {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 90px;
+    padding: 8px 12px;
+    margin: 0 5px;
+    padding: 8px 5px;
+    margin-top: 10px;
+}
+
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background-color:  #c5c2c2;
+    margin-top: 0;
+    transition: 0.5s;
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    .header {
+        height: 60px;
+    }
+    .logo {
+        display: flex;
+        display: block;
+        line-height: 60px;
+        padding: 0 20px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+    }
+    .nav-menu-item {
+        line-height: 70px;
+    }
+    .nav-menu-link:hover, 
+    .nav-menu-link_active { 
+        background-color: none;
+        color: #83c5f7;
+    }
+    .nav-toggle{
+        display: block;
+    }
+}
+/* Inicia img */
 
 img{
     max-width: 100%;
@@ -48,8 +132,9 @@ img{
 }
 
 .galeria{
-    columns: 6 320px;
+    columns: 7 170px;
     column-gap: .5em;
+    height: auto;
 }
 
 .img2{
@@ -58,31 +143,35 @@ img{
     flex-direction: column;
 }
 
-/* footer */
+/* footer inica */
 footer{
-    background: #2f2f2f;
+    background: #333;
     padding: 40px 0;
     text-align: center;
     margin-top: 40px;
+    flex-direction: row;
 }
 
-footer .contenedor{
+.contenedor, .redes {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-around;
+    margin: 40px 40px;
+    padding: 0 5px;
+    width: 100%;
+    
 }
 
 footer p{
-    color: white;
+    color: #fff;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 18px;
     margin-top: 40px;
+    height: 20px;
+    width: 100%;
 }
 
 html{
     scroll-behavior: smooth;
-}
-
-.redes{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
