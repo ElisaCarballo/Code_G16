@@ -22,11 +22,6 @@ body {
     justify-content: space-between;
 }
 
-.nav-link {
-    color: white;
-    text-decoration: none;
-}
-
 .logo {
     display: flex;
     display: block;
@@ -56,15 +51,14 @@ body {
 }
 
 .nav-menu-link {
-    font-size: 18px;
-    font-weight: bold;
     line-height: 80px;
-    padding: 8px 12px;
     margin: 0 10px;
-    padding: 8px 12px;
     margin-top: 5px;
 }
 
+.nav-menu-link[data-animation="to-right"] a span:last-child {
+    transform: translateX(-100%);
+}
 
 .nav-menu-link:hover,
 .nav-menu-link_active {
@@ -120,4 +114,11 @@ body {
     .nav-toggle{
         display: block;
     }
+}
+.nav-menu-link[data-animation="to-right"] a span:last-child {
+    transform: translateX(-100%);
+}
+
+img.buscador{ 
+    content: url("../Img/BusNeGRO.png");
 }
