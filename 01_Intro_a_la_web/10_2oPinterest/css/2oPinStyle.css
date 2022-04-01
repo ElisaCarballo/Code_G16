@@ -189,7 +189,7 @@ img{
 
 .galeria{
     columns: 6 170px;
-    column-gap: .5em;
+    column-gap: .8em;
     height: auto;
 }
 
