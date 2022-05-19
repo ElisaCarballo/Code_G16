@@ -17,4 +17,4 @@ document.addEventListener('DOMContentLoaded', function() {
         dismissible=
     }:
     var instances = M.Modal.init(elems, options);
-  });
+});

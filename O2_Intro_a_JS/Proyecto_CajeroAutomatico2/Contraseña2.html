@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CajeroAutomatico</title>
+    
+
+    <form action="">
+        <h1>Login</h1>
+        <label for="">Nombre Usuario</label>
+        <input type="text" name="u" id="">
+        <label for="">Nueva Contraseña</label>
+        <input type="NuevaContraseña" name="c" id="">
+        <input type="button" value="Ingresar" onclick="login(this.form)">
+    </form>
+
+    <script>
+        function login(form){
+            if (form.u.value=="Elisa") {
+                if (form.c.value=="456"){
+                    location="principal.html";
+                    location="Usuario2.html"
+                }
+                else {
+                    alert("Error has ingresado mal tus datos");
+                }
+            } else {
+                alert("Error has ingresado mal tus datos");
+            }
+        }
+    
+</script>
+</head>
+<body>
+    <div class="social-bar">
+        <a href="#" class="icon icon-Insertatarjeta" target="_blank"><img src="img/Insertatarjeta.png" alt="Insertatarjeta"></a>
+        </div>
+</body>
+</html>
